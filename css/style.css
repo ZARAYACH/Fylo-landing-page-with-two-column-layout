@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700;900&display=swap");
+:root {
+  --color-Very-Dark-Blue: hsl(243, 87%, 12%);
+  --color-Desaturated-Blue: hsl(238, 22%, 44%);
+  --color-Brigh-tBlue: hsl(224, 93%, 58%);
+  --color-Moderate-Cyan: hsl(170, 45%, 43%);
+  --color-Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --color-Light-Gray: hsl(0, 0%, 75%);
+  --font-hedings-400: Raleway;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", "Open Sans";
+  font-size: 16px;
+}
+/* heading style */
+header {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+}
+.logo,
+.menu {
+  width: 50%;
+  height: 100%;
+}
+.logo img {
+  padding-left: 4rem;
+  padding-top: 2rem;
+  width: 30%;
+}
+.menu {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 4rem;
+}
+.menu nav ul li {
+  display: inline;
+  padding: 1rem 2rem 1rem 2rem;
+  color: var(--color-Very-Dark-Blue);
+  font-family: var(--font-hedings-400);
+}
+/* body style */
+/* first section style */
+
+.first {
+  margin: 1rem 6rem 0 4rem;
+  display: flex;
+  justify-content: center;
+}
+.text {
+  width: 55%;
+  text-shadow: 0px 0px 1.4px var(--color-Very-Dark-Blue);
+}
+.image {
+  width: 45%;
+}
+.title {
+  margin-top: 2.7rem;
+  max-width: 90%;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.description {
+  max-width: 88%;
+  line-height: 1.7rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 1.1rem;
+  margin-bottom: 1rem;
+}
+.enroll {
+  max-width: 80%;
+}
+#entries {
+  width: 55%;
+  height: 2.5rem;
+  margin-right: 2rem;
+}
+.enroll #entries:invalid::after {
+  content: attr(data-error);
+  font-size: 1rem;
+  padding: 1rem;
+  color: red;
+  border: red;
+}
+#star {
+  background-color: var(--color-Brigh-tBlue);
+  border: none;
+  padding: 0.7rem 4.1rem;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#star:hover,
+#star:focus {
+  background-color: hsl(224, 93%, 77%);
+  box-shadow: 5px 5px 10px rgba(88, 64, 64, 0.247);
+  transform: translateY(-5px);
+}
+.image {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.image img {
+  width: 100%;
+}
+/* second section */
