@@ -52,7 +52,7 @@ header {
 /* first section style */
 
 .first {
-  margin: 1rem 6rem 0 4rem;
+  margin: 1rem 6rem 2rem 4rem;
   display: flex;
   justify-content: center;
 }
