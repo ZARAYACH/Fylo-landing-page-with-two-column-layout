@@ -9,7 +9,7 @@
   --color-Light-Gray: hsl(0, 0%, 75%);
   --font-hedings-400: Raleway;
 }
-::selection{
+::selection {
   background-color: var(--color-Light-Gray);
 }
 ul {
@@ -17,7 +17,7 @@ ul {
   margin-block: 0;
   padding-inline: 0;
 }
-a{
+a {
   text-decoration: none;
   color: currentColor;
 }
@@ -27,14 +27,17 @@ p {
 }
 * {
   box-sizing: border-box;
-    transition: .5s;
+  transition: 0.5s;
+}
+html {
+  font-size: 16px;
 }
 body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", "Open Sans";
-  font-size: 16px;
-    transition: .5s;
+  /* font-size: 16px; */
+  transition: 0.5s;
 }
 /* heading style */
 header {
@@ -63,17 +66,16 @@ header {
 .menu nav ul li {
   display: inline;
   padding: 1rem 2rem 1rem 2rem;
-   transition: .4s;
+  transition: 0.4s;
 }
-.menu nav ul li a{
+.menu nav ul li a {
   color: var(--color-Very-Dark-Blue);
   font-family: var(--font-hedings-400);
- 
 }
-.menu nav ul li:hover{
-  color: var(--color-Desaturated-Blue) ;
- box-shadow: 5px 5px 10px rgb(88 64 64 / 25%);
-    /* transform: translateY(-15px); */
+.menu nav ul li:hover {
+  color: var(--color-Desaturated-Blue);
+  box-shadow: 5px 5px 10px rgb(88 64 64 / 25%);
+  /* transform: translateY(-15px); */
 }
 
 /* body style */
@@ -392,8 +394,7 @@ header {
   margin-bottom: 1rem;
   padding-left: 8rem;
   color: #ffffff;
-  transition: .5s;
-
+  transition: 0.5s;
 }
 .nav-1 ul li img,
 p {
@@ -429,16 +430,50 @@ p {
 .nav-1 ul li a,
 .nav-2 ul li a,
 .nav-3 ul li a,
-.nav-4 ul li a{
+.nav-4 ul li a {
   color: #ffffff;
-
-
-
 }
 .nav-1 ul li a:hover,
 .nav-2 ul li a:hover,
 .nav-3 ul li a:hover,
-.nav-4 ul li a:hover{
-    color: var(--color-Desaturated-Blue);
+.nav-4 ul li a:hover {
+  color: var(--color-Desaturated-Blue);
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+  .menu nav ul li {
+    padding: 0rem 1rem 1rem 0rem;
+  }
+  .logo img {
+    padding-top: 3rem;
+    width: 65%;
+  }
+  .first {
+    margin: 1rem 6rem 10rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text {
+    width: 100%;
+    text-align: center;
+    order: 2;
+  }
+  .image {
+    width: 95%;
+    order: 1;
+  }
+  .title {
+    max-width: 100%;
+    font-size: 2.3rem;
+  }
+  .description{
+   max-width: 100%;
+  }
+  .enroll {
+    max-width: 100%;
+}
 
-} 
+}
