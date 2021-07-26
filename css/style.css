@@ -64,6 +64,7 @@ header {
   width: 45%;
 }
 .title {
+  color: var(--color-Very-Dark-Blue);
   margin-top: 2.7rem;
   max-width: 90%;
   line-height: 3rem;
@@ -72,6 +73,7 @@ header {
   font-weight: 700;
 }
 .description {
+  color: var(--color-Very-Dark-Blue);
   max-width: 88%;
   line-height: 1.7rem;
   margin-bottom: 1rem;
@@ -86,12 +88,33 @@ header {
   width: 55%;
   height: 2.5rem;
   margin-right: 1rem;
-}
-.enroll #entries:invalid {
-  content: attr(data-error);
-  font-size: 1rem;
   padding: 1rem;
+  border: 0.001px solid #929191;
+  border-radius: 5px;
 }
+#entries,#entries2:focus{
+  outline: none;
+  border: 0.001px solid #929191;
+  }
+#error-email{
+  font-size: .8rem;
+  margin: .8rem 0rem;
+  color: #b93232;
+  text-shadow: none;
+}
+.enroll #entries:invalid,#entries2:invalid{
+    BACKGROUND-COLOR: #f19e9e;
+    font-size: 1rem;
+    padding: 1rem;
+    border: 0.001px solid #b93232
+}
+/* .enroll::after{
+  content: attr(data-error);
+  font-size: .8rem;
+  margin: 3rem 0rem;
+  color: #b93232;
+  text-shadow: none;
+} */
 #star {
   background-color: var(--color-Brigh-tBlue);
   border: none;
@@ -140,6 +163,7 @@ header {
   width: 40%;
 }
 .title2 {
+  color: var(--color-Very-Dark-Blue);
   max-width: 100%;
   margin-top: 2.7rem;
   margin-bottom: 2.5rem;
@@ -149,6 +173,7 @@ header {
 }
 .description2,
 .description3 {
+  color: var(--color-Very-Dark-Blue);
   max-width: 75%;
   line-height: 1.7rem;
   margin-bottom: 1rem;
@@ -194,6 +219,7 @@ header {
   width: 1rem;
 }
 .quates {
+  color: var(--color-Very-Dark-Blue);
   font-size: 0.8rem;
   line-height: 1.5rem;
   margin-bottom: 1rem;
@@ -216,10 +242,62 @@ header {
   border-radius: 50%;
 }
 .user-name {
+  color: var(--color-Very-Dark-Blue);
   font-size: 0.9rem;
   line-height: 1.3rem;
-  font-weight: 400;
+  font-weight: 800;
 }
 .user-name span {
+  font-size: 0.7rem;
+  font-weight: 700;
   color: var(--color-Light-Gray);
+}
+/* third-section */
+.third {
+  width: 100%;
+  background-color: var(--color-Desaturated-Blue);
+}
+.third-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 6rem 2rem 4rem;
+}
+.text3 {
+  width: 50%;
+}
+.enroll2 {
+  width: 37%;
+}
+.title3 {
+  color: #ffffff;
+  max-width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-family: var(--font-hedings-400);
+  font-weight: 700;
+}
+.description4 {
+  max-width: 90%;
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+.enroll2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: flex-start;
+}
+#entries2 {
+  width: 100%;
+  height: 2.5rem;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
 }
