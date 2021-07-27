@@ -451,7 +451,7 @@ p {
     width: 65%;
   }
   .first {
-    margin: 1rem 6rem 10rem 4rem;
+    margin: 1rem 2rem 10rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -462,17 +462,93 @@ p {
     order: 2;
   }
   .image {
-    width: 95%;
+    padding-top: 4rem;
+    width: 100%;
     order: 1;
   }
   .title {
     max-width: 100%;
     font-size: 2.3rem;
+    margin-bottom: 3rem;
   }
   .description {
     max-width: 100%;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    padding-bottom: 2rem;
   }
   .enroll {
     max-width: 100%;
+  }
+  #entries {
+    width: 95%;
+    height: 4.4rem;
+    margin-bottom: 2rem;
+  }
+  #star {
+    width: 95%;
+    height: 4.4rem;
+  }
+  .container {
+    padding: 2rem 2rem 6rem 2rem;
+    flex-direction: column;
+  }
+  .text2 {
+    order: 2;
+    width: 100%;
+  }
+  .text2 .title2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .image2 {
+    padding-top: 4rem;
+    width: 100%;
+    order: 1;
+  }
+  .description2,
+  .description3 {
+    max-width: 95%;
+    font-size: 1.3rem;
+  }
+  #link {
+    font-size: 1.3rem;
+    width: 43%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    border-bottom: 0.1rem solid currentColor;
+  }
+  #link span img {
+    width: 1.5rem;
+    margin-left: 0.6rem;
+  }
+  .tweet {
+    max-width: 65%;
+  }
+  .third-container {
+    flex-direction: column;
+    padding: 2rem 2rem 3rem 2rem;
+  }
+  .text3 {
+    width: 100%;
+    text-align: center;
+  }
+  .title3 {
+    font-size: 2rem;
+  }
+  .description4 {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 2rem 0 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+  }
+  .enroll2 {
+    width: 100%;
+  }
+  #entries2 {
+    margin: 0 2rem 0 2rem;
   }
 }
